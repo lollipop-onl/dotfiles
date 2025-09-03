@@ -8,9 +8,10 @@
 
 ## 🔄 Sync dotfiles
 
-- リモートの変更を反映する<br>`mise tasks run pull-dotfiles`
-- リモートに変更を反映する<br>`mise tasks run push-dotfiles`
+```sh
+mise tasks run dotfiles-sync
+```
 
-## 🛂 Licence
+## 🛂 License
 
 MIT
