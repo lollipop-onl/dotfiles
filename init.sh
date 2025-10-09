@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # 必要なツールのインストール
-curl -fsSL https://mise.sh/install | sh
+curl -fsSL https://mise.run | sh
 
 # configs ディレクトリのファイルをホームディレクトリにシンボリックリンクとして配置する
 DOTFILES_DIR=$HOME/dotfiles/configs
