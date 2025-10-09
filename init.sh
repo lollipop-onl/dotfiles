@@ -1,7 +1,12 @@
 #!/bin/zsh
 
 # 必要なツールのインストール
+# mise-en-place
 curl -fsSL https://mise.run | sh
+# Zinit
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+# Zsh plugins with Zinit
+zinit load azu/ni.zsh
 
 # configs ディレクトリのファイルをホームディレクトリにシンボリックリンクとして配置する
 DOTFILES_DIR=$HOME/dotfiles/configs
