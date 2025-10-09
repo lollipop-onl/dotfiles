@@ -4,7 +4,7 @@
 curl -fsSL https://mise.sh/install | sh
 
 # configs ディレクトリのファイルをホームディレクトリにシンボリックリンクとして配置する
-DOTFILES_DIR=$(pwd)/configs
+DOTFILES_DIR=$HOME/dotfiles/configs
 TARGET_DIR=$HOME
 
 echo "--- DIRECTORY SETUP AND SYMLINK CREATION ---"
