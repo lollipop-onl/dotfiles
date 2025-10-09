@@ -2,3 +2,5 @@
 if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local
 fi
+
+eval "$(~/.local/bin/mise activate zsh)"
