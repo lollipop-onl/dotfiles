@@ -30,6 +30,9 @@ echo "DONE."
 # Zinit
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 exec zsh
+echo "zinit installed"
 zinit self-update
+echo "zinit updated"
 # Zsh plugins with Zinit
 zinit load azu/ni.zsh
+echo "ni.zsh installed"
