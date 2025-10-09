@@ -27,12 +27,6 @@ done
 echo "DONE."
 
 # zsh プラグインのインストール
-# Zinit
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
-exec zsh
-echo "zinit installed"
-zinit self-update
-echo "zinit updated"
-# Zsh plugins with Zinit
-zinit load azu/ni.zsh
-echo "ni.zsh installed"
+curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh \
+    | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
+sheldon init --shell zsh
