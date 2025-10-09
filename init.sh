@@ -29,4 +29,4 @@ echo "DONE."
 # zsh プラグインのインストール
 curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh \
     | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
-sheldon init --shell zsh
+~/.local/bin/sheldon init --shell zsh
