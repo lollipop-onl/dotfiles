@@ -4,7 +4,9 @@
 # mise-en-place
 curl -fsSL https://mise.run | sh
 # Zinit
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+exec zsh
+zinit self-update
 # Zsh plugins with Zinit
 zinit load azu/ni.zsh
 
