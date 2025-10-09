@@ -7,8 +7,6 @@ RUN apt-get update && \
 
 WORKDIR /root
 
-ENV SHELL /usr/bin/zsh
-RUN zsh
 RUN chsh -s $(which zsh)
 
 RUN git clone https://github.com/lollipop-onl/dotfiles.git $HOME/dotfiles && \
