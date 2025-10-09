@@ -6,9 +6,10 @@ RUN apt-get update && \
 
 WORKDIR /root
 
+RUN zsh
 RUN chsh -s $(which zsh)
 
-RUN git clone https://github.com/lollipop-onl/dotfiles.git ~/dotfiles && \
+RUN git clone https://github.com/lollipop-onl/dotfiles.git $HOME/dotfiles && \
     ~/dotfiles/init.sh
 
-CMD ["/bin/bash"]
+CMD ["/bin/zsh"]
