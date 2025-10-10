@@ -9,7 +9,5 @@ WORKDIR /root
 
 RUN chsh -s $(which zsh)
 
-RUN git clone https://github.com/lollipop-onl/dotfiles.git $HOME/dotfiles \
-    && ~/dotfiles/init.sh
-
+COPY . ./dotfiles
 CMD ["/bin/zsh"]

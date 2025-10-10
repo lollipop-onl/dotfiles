@@ -1,9 +1,5 @@
 #!/bin/zsh
 
-# 必要なツールのインストール
-# mise-en-place
-curl -fsSL https://mise.run | sh
-
 # configs ディレクトリのファイルをホームディレクトリにシンボリックリンクとして配置する
 DOTFILES_DIR=$HOME/dotfiles/configs
 TARGET_DIR=$HOME
@@ -26,7 +22,12 @@ done
 
 echo "DONE."
 
-# zsh プラグインのインストール
-curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh \
-    | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
-~/.local/bin/sheldon init --shell zsh
+source ~/.zshrc
+
+# 必要なツールのインストール
+# mise-en-place
+curl -fsSL https://mise.run | sh
+~/.local/bin/mise install
+
+# oh-my-zsh のインストール
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
