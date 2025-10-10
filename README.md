@@ -1,5 +1,17 @@
 # dotfiles
 
+Personal development environment configuration files.
+
+## 📋 Prerequisites
+
+- curl
+- git
+- zsh
+
+```shell
+brew install git zsh
+```
+
 ## 🔰 Setup
 
 ```sh
