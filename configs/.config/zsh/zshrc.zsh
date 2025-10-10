@@ -5,6 +5,12 @@ if [ -f $ZDOTDIR/zshrc.local.zsh ]; then
   . $ZDOTDIR/zshrc.local.zsh
 fi
 
+# 補完
+autoload -Uz compinit && compinit -C
+
+# Powerlevel10k
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
 # mise-en-place
 eval "$(~/.local/bin/mise activate zsh)"
 
