@@ -4,7 +4,7 @@ ZNAPDIR=$XDG_CONFIG_HOME/zsh-snap
     git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git $ZNAPDIR
 source $ZNAPDIR/znap.zsh
 
-znap source romkatv/powerlevel10k
+znap prompt sindresorhus/pure
 znap source rupa/z
 znap source zsh-users/zsh-completions
 znap source zsh-users/zsh-autosuggestions

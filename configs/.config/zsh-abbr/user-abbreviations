@@ -1,1 +1,7 @@
-abbr "cc"="claude code"
+abbr "cc"="claude"
+abbr "ccy"="claude --dangerously-skip-permissions"
+abbr "ccs"="zed ~/.claude/settings.json"
+
+abbr "nr"="ni run"
+abbr "nun"="ni remove"
+abbr "nlx"="ni dlx"
