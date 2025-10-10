@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #MISE description="Init dotfiles"
+
 ~/dotfiles/init.sh
