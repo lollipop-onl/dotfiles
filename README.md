@@ -12,6 +12,7 @@ source ~/.zshrc
 
 ```sh
 mise tasks run dotfiles-sync
+# or dsync
 ```
 
 ## 🛂 License

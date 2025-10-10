@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#MISE description="Sync dotfiles with remote repository"
+#MISE dir="~/dotfiles"
+
+# Pull latest changes from remote
+echo "Pulling latest changes from remote..."
+git pull --rebase
+
+# Check if there are any changes in the working directory
+if ! git diff --quiet || ! git diff --cached --quiet; then
+  echo "Changes detected. Committing changes..."
+
+  # Stage all changes
+  git add -A
+
+  # Create commit with timestamp
+  commit_message="chore: sync dotfiles - $(date '+%Y-%m-%d %H:%M:%S')"
+  git commit -m "$commit_message"
+
+  echo "Changes committed: $commit_message"
+fi
+
+# Push local changes to remote
+echo "Pushing local changes to remote..."
+git push
+
+echo "Sync completed successfully!"

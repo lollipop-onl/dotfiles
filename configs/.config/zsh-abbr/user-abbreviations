@@ -5,3 +5,5 @@ abbr "ccs"="zed ~/.claude/settings.json"
 abbr "nr"="ni run"
 abbr "nun"="ni remove"
 abbr "nlx"="ni dlx"
+
+abbr "dsync"="mise tasks run dotfiles-sync"
