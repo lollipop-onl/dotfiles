@@ -22,8 +22,6 @@ done
 
 echo "DONE."
 
-source ~/.config/zsh/.zshrc
-
 # 必要なツールのインストール
 # mise-en-place
 if [ ! -f ~/.local/bin/mise ]; then
