@@ -9,7 +9,7 @@ fi
 autoload -Uz compinit && compinit -C
 
 # Powerlevel10k
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+[[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
 
 # mise-en-place
 eval "$(~/.local/bin/mise activate zsh)"
