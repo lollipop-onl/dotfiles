@@ -2,10 +2,6 @@
 #MISE description="Sync dotfiles with remote repository"
 #MISE dir="~/dotfiles"
 
-# Pull latest changes from remote
-echo "Pulling latest changes from remote..."
-git pull --rebase
-
 # Check if there are any changes in the working directory
 if ! git diff --quiet || ! git diff --cached --quiet; then
   echo "Changes detected. Committing changes..."
@@ -19,6 +15,10 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
 
   echo "Changes committed: $commit_message"
 fi
+
+# Pull latest changes from remote
+echo "Pulling latest changes from remote..."
+git pull --rebase
 
 # Push local changes to remote
 echo "Pushing local changes to remote..."
