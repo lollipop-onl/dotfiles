@@ -1,5 +1,3 @@
-source ~/.config/zsh/.zshenv
-
 # ローカル設定ファイルを読み込む
 if [ -f $ZDOTDIR/zshrc.local.zsh ]; then
   . $ZDOTDIR/zshrc.local.zsh
