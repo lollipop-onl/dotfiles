@@ -1,9 +1,5 @@
 #!/bin/zsh
 
-# configs ディレクトリのファイルをホームディレクトリにシンボリックリンクとして配置する
-DOTFILES_DIR=$HOME/dotfiles/configs
-TARGET_DIR=$HOME
-
 ./scripts/setup_symlinks.sh
 
 source ~/.zshrc

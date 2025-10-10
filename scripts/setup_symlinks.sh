@@ -1,5 +1,9 @@
 echo "--- DIRECTORY SETUP AND SYMLINK CREATION ---"
 
+# configs ディレクトリのファイルをホームディレクトリにシンボリックリンクとして配置する
+DOTFILES_DIR=$HOME/dotfiles/configs
+TARGET_DIR=$HOME
+
 find "$DOTFILES_DIR" -type f -print0 | while IFS= read -r -d $'\0' source_path; do
   relative_path=${source_path#"$DOTFILES_DIR/"}
   target_path="$TARGET_DIR/$relative_path"
