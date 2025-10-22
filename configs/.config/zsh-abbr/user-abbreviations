@@ -10,6 +10,8 @@ abbr cc="claude"
 abbr ccy="claude --dangerously-skip-permissions"
 abbr ccs="zed ~/.claude/settings.json"
 
+abbr ni="ni add"
+abbr nid="ni add -D"
 abbr nr="ni run"
 abbr nun="ni remove"
 abbr nlx="ni dlx"
