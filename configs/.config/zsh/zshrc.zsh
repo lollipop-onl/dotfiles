@@ -10,7 +10,10 @@ autoload -U promptinit && promptinit
 eval "$(~/.local/bin/mise activate zsh)"
 
 # fzf
-source <(fzf --zsh)
+source $ZDOTDIR/fzf.zsh
+
+# ghq
+source $ZDOTDIR/ghq.zsh
 
 # znap
 source $ZDOTDIR/znap.zsh

@@ -6,10 +6,13 @@ abbr "~"="cd ~"
 abbr dl="cd ~/Downloads"
 abbr dt="cd ~/Desktop"
 
-abbr cc="claude"
-abbr ccy="claude --dangerously-skip-permissions"
+abbr cc="voidenter -- claude"
+abbr ccy="voidenter -- claude --dangerously-skip-permissions"
 abbr ccs="zed ~/.claude/settings.json"
 
+abbr idea="open -na 'IntelliJ IDEA.app' --args"
+
+abbr nii="ni"
 abbr ni="ni add"
 abbr nid="ni add -D"
 abbr nr="ni run"
@@ -17,3 +20,4 @@ abbr nun="ni remove"
 abbr nlx="ni dlx"
 
 abbr dsync="mise tasks run dotfiles-sync"
+abbr winit="mise run worktree-init"
