@@ -1,5 +1,38 @@
 [tools]
-node = '24'
-pnpm = '10'
+node = "24"
+pnpm = "10"
 fzf = 'latest'
 "npm:@anthropic-ai/claude-code" = "latest"
+"npm:voidenter" = "latest"
+"npm:difit" = "latest"
+"npm:@google/gemini-cli" = "latest"
+go = "latest"
+"go:github.com/d-kuro/gwq/cmd/gwq" = "latest"
+
+[tasks.worktree-init]
+run = '''
+PROJECT_DIR=$(git rev-parse --show-toplevel)
+MAIN_DIR=$(ghq root)/nulab.git.backlog.jp/BLG/backlog-scala
+
+# Git
+if [ ! -e "$PROJECT_DIR/.gitignore" ]; then
+  ln -s $(ghq root)/nulab.git.backlog.jp/BLG/backlog-scala/.gitignore $(git rev-parse --show-toplevel)
+fi
+
+# IntelliJ IDEA
+if [ ! -e "$PROJECT_DIR/.run.local" ]; then
+  ln -s $(ghq root)/nulab.git.backlog.jp/BLG/backlog-scala/.run.local $(git rev-parse --show-toplevel)
+fi
+
+# Claude Code
+if [ ! -e "$PROJECT_DIR/.claude" ]; then
+  ln -s $(ghq root)/nulab.git.backlog.jp/BLG/backlog-scala/.claude $(git rev-parse --show-toplevel)
+fi
+
+# mise-en-place
+if [ ! -e "$PROJECT_DIR/.mise.local.toml" ]; then
+  ln -s $(ghq root)/nulab.git.backlog.jp/BLG/backlog-scala/.mise.local.toml $(git rev-parse --show-toplevel)
+fi
+
+mise trust
+'''
