@@ -1,6 +1,6 @@
 theme = Catppuccin Latte
 
-macos-titlebar-style = hidden
+macos-titlebar-style = tabs
 macos-non-native-fullscreen = true
 
 window-padding-balance = true
